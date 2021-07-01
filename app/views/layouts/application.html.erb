@@ -10,8 +10,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('favicon.ico') %> 
   </head>
+<%= render "shared/frontcss" %>
 
   <body>
     <%= yield %>
+
   </body>
+ <%= render "shared/frontjs" %>
+
 </html>

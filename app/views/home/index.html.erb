@@ -1,299 +1,151 @@
 
-
-<%= render "shared/frontcss" %>
-
-
- <%= render "shared/frontnav" %>
-
-    <!-- Search Form Start-->
-    <div class="search-form-wrapper">
-      <div class="search-trigger close-btn">
-        <span></span>
-        <span></span>
-      </div>
-      <form class="search-form" method="post">
-        <input type="text" placeholder="Search..." value="">
-        <button type="submit" class="search-btn">
-          <i class="flaticon-magnifying-glass"></i>
-        </button>
-      </form>
-    </div>
-    <!-- Search Form End-->
+<%= render "shared/frontnav" %>
 
 
-  </header>
-  <!-- Header End -->
-
-  <!-- Subheader Start -->
-  <div class="subheader bg-cover dark-overlay dark-overlay-2" style="background-image: url('blog/assets/img/subheader.jpg')">
+  <!-- Banner Start -->
+  <div class="banner banner-video dark-overlay">
+    <video autoplay muted loop id="myVideo">
+      <source src="blog/assets/vids/video-banner.mp4" type="video/mp4">
+    </video>
+    <!-- Prev Arrow -->
+    <!-- <i class="slider-prev fas fa-arrow-left slick-arrow"></i> -->
     <div class="container">
-      <div class="subheader-inner">
-        <h1>Blog</h1>
+
+      <div class="banner-slider">
+        
+        <div class="banner-item text-center">
+          <div class="banner-inner">
+            <h1 class="title text-white"><span class="custom-primary">Elevate</span> Your Cooking Skills</h1>
+            <p class="subtitle text-white">Bacon ipsum dolor amet ball tip pork chop cow tenderloin andouille. Pastrami pork picanha tongue venison strip steak</p>
+            <a href="/b" class="btn-custom primary shadow-none">Visit My Blog <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Next Arrow -->
+    <!-- <i class="slider-next fas fa-arrow-right slick-arrow"></i> -->
+  </div>
+  <!-- Banner End -->
+
+  <!-- Categories Section Start -->
+  <div class="section section-padding ct-categories ct-categories-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#" class="ct-category">
+            <div class="ct-category-icon">
+              <i class="flaticon-croissant"></i>
+              <h5>Breakfast</h5>
+              <span>17 Recipes</span>
+            </div>
+          </a>
+        </div>     
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#" class="ct-category">
+            <div class="ct-category-icon">
+              <i class="flaticon-pudding"></i>
+              <h5>Desserts</h5>
+              <span>45 Recipes</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#" class="ct-category">
+            <div class="ct-category-icon">
+              <i class="flaticon-pizza"></i>
+              <h5>Pizzas</h5>
+              <span>13 Recipes</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <a href="#" class="ct-category">
+            <div class="ct-category-icon">
+              <i class="flaticon-pancakes"></i>
+              <h5>Pancakes</h5>
+              <span>21 Recipes</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <!-- Subheader End -->
+  <!-- Categories Section End -->
 
   <!-- Blog Posts Start -->
-  <div class="section section-padding posts">
+  <section class="section pt-0 section-padding posts">
     <div class="container">
-
-      <div class="row">
-        <div class="col-lg-8">
-
-          <div class="row">
-
-            <!-- Post Start -->
-            <div class="col-lg-6 col-md-6">
-              <article class="post">
-                <div class="post-thumbnail">
-                  <a href="blog-single-v1.html"><img src="blog/assets/img/blog/1.jpg" alt="blog post"></a>
-                  <div class="post-meta">
-                    <span>January 22, 2020</span>
-                    <span>Posted by Jonathan Pick</span>
-                  </div>
-                </div>
-                <div class="post-categories">
-                  <a href="#">Breakfast</a>
-                </div>
-                <div class="post-body">
-                  <h5 class="post-title"> <a href="blog-single-v1.html">Puffy Pancakes Glazed With Caramel Topped With Fruits</a> </h5>
-                  <p class="post-text">
-                    Some quick example text to build on the card title and make up the bulk of the card's content
-                  </p>
-                </div>
-              </article>
-            </div>
-            <!-- Post End -->
-
-            <!-- Post Start -->
-            <div class="col-lg-6 col-md-6">
-              <article class="post">
-                <div class="post-thumbnail">
-                  <a href="blog-single-v1.html">
-                    <img src="blog/assets/img/blog/5.jpg" alt="blog post">
-                  </a>
-                  <div class="post-meta">
-                    <span>April 26, 2020</span>
-                    <span>Posted by Jonathan Pick</span>
-                  </div>
-                </div>
-                <div class="post-categories">
-                  <a href="#">Cuisine</a>
-                </div>
-                <div class="post-body">
-                  <h5 class="post-title"> <a href="blog-single-v1.html">Rare Tenderloine With Gravy, Tomatoes and Parsley </a> </h5>
-                  <p class="post-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
-                </div>
-              </article>
-            </div>
-            <!-- Post End -->
-
-            <!-- Post Start -->
-            <div class="col-lg-6 col-md-6">
-              <article class="post">
-                <div class="post-thumbnail">
-                  <a href="blog-single-v1.html"><img src="blog/assets/img/blog/4.jpg" alt="blog post"></a>
-                  <div class="post-meta">
-                    <span>April 26, 2020</span>
-                    <span>Posted by Jonathan Pick</span>
-                  </div>
-                </div>
-                <div class="post-categories">
-                  <a href="#">Lunch</a>
-                </div>
-                <div class="post-body">
-                  <h5 class="post-title"> <a href="blog-single-v1.html">Pasta With Pesto Sauce, Topped With Grated Cheese </a> </h5>
-                  <p class="post-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
-                </div>
-              </article>
-            </div>
-            <!-- Post End -->
-
-            <!-- Post Start -->
-            <div class="col-lg-6 col-md-6">
-              <article class="post post-format-video">
-                <div class="post-thumbnail">
-                  <a href="blog-single-v1.html"><img src="blog/assets/img/blog/3.jpg" alt="blog post"></a>
-                  <div class="post-meta">
-                    <span>January 22, 2020</span>
-                    <span>Posted by Jonathan Pick</span>
-                  </div>
-                  
-                </div>
-                <div class="post-categories">
-                  <a href="#">How-To</a>
-                  <a href="#">Breakfast</a>
-                </div>
-                <div class="post-body">
-                  <h5 class="post-title"> <a href="blog-single-v1.html">Chocolate Coated Browny </a> </h5>
-                  <p class="post-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
-                </div>
-              </article>
-            </div>
-            <!-- Post End -->
-
-            <!-- Post Start -->
-            <div class="col-lg-6 col-md-6">
-              <article class="post">
-                <div class="post-thumbnail">
-                  <a href="blog-single-v1.html">
-                    <img src="blog/assets/img/blog/9.jpg" alt="blog post">
-                  </a>
-                  <div class="post-meta">
-                    <span>April 26, 2020</span>
-                    <span>Posted by Jonathan Pick</span>
-                  </div>
-                </div>
-                <div class="post-categories">
-                  <a href="#">Cuisine</a>
-                </div>
-                <div class="post-body">
-                  <h5 class="post-title"> <a href="blog-single-v1.html">Medium Rare Steak with Grilled Tomatoes</a> </h5>
-                  <p class="post-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
-                </div>
-              </article>
-            </div>
-            <!-- Post End -->
-
-            <!-- Post Start -->
-            <div class="col-lg-6 col-md-6">
-              <article class="post">
-                <div class="post-thumbnail">
-                  <a href="blog-single-v1.html"><img src="blog/assets/img/blog/10.jpg" alt="blog post"></a>
-                  <div class="post-meta">
-                    <span>April 26, 2020</span>
-                    <span>Posted by Jonathan Pick</span>
-                  </div>
-                </div>
-                <div class="post-categories">
-                  <a href="#">Lunch</a>
-                </div>
-                <div class="post-body">
-                  <h5 class="post-title"> <a href="blog-single-v1.html">Grilled Lamb Coated With Butter and Thyme</a> </h5>
-                  <p class="post-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
-                </div>
-              </article>
-            </div>
-            <!-- Post End -->
-
-          </div>
-
-        </div>
-        <div class="col-lg-4">
-          <div class="sidebar">
-
-            <div class="sidebar-widget">
-              <h5>Recent Posts</h5>
-              <article class="media">
-                <a href="blog-single-v1.html"><img src="blog/assets/img/blog/10.jpg" alt="post"></a>
-                <div class="media-body">
-                  <h6> <a href="blog-single-v1.html">Grilled Lamb Coated With Butter and Thyme</a> </h6>
-                  <p>January 22, 2020</p>
-                </div>
-              </article>
-              <article class="media">
-                <a href="blog-single-v1.html"><img src="blog/assets/img/blog/4.jpg" alt="post"></a>
-                <div class="media-body">
-                  <h6> <a href="blog-single-v1.html">Pasta With Pesto Sauce, Topped With Grated Cheese</a> </h6>
-                  <p>January 24, 2020</p>
-                </div>
-              </article>
-              <article class="media">
-                <a href="blog-single-v1.html"><img src="blog/assets/img/blog/7.jpg" alt="post"></a>
-                <div class="media-body">
-                  <h6> <a href="blog-single-v1.html">Sugary Pancakes Dressed With Cream</a> </h6>
-                  <p>January 26, 2020</p>
-                </div>
-              </article>
-              <article class="media">
-                <a href="blog-single-v1.html"><img src="blog/assets/img/blog/5.jpg" alt="post"></a>
-                <div class="media-body">
-                  <h6> <a href="blog-single-v1.html">Rare Tenderloine With Gravy, Tomatoes and Parsley</a> </h6>
-                  <p>January 28, 2020</p>
-                </div>
-              </article>
-            </div>
-
-            <div class="sidebar-widget">
-              <h5>Featured Recipes</h5>
-
-              <div class="recipe featured-recipe">
-                <div class="recipe-thumbnail">
-                  <a href="#">
-                    <img src="blog/assets/img/blog/7.jpg" alt="blog post">
-                  </a>
-                </div>
-                <div class="recipe-body">
-                  <h6 class="recipe-title"> <a href="#">Sugary Pancakes Dressed With Cream and Raspberries</a> </h6>
-                  <div class="recipe-meta">
-                    <div class="recipe-difficulty">
-                      <div class="recipe-difficulty-inner">
-                        <span class="active"></span>
-                        <span class="active"></span>
-                        <span></span>
-                      </div>
-                      <span>Home Cook</span>
-                    </div>
-                    <div class="recipe-steps">
-                      <span><i class="fas fa-concierge-bell"></i> 24 Steps</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="recipe featured-recipe">
-                <div class="recipe-thumbnail">
-                  <a href="#">
-                    <img src="blog/assets/img/blog/11.jpg" alt="blog post">
-                  </a>
-                </div>
-                <div class="recipe-body">
-                  <h6 class="recipe-title"> <a href="#">Fig and Raspberry Cake With Sugar Filling and Coating</a> </h6>
-                  <div class="recipe-meta">
-                    <div class="recipe-difficulty">
-                      <div class="recipe-difficulty-inner">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                      <span>Amateur</span>
-                    </div>
-                    <div class="recipe-steps">
-                      <span><i class="fas fa-concierge-bell"></i> 13 Steps</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="sidebar-widget tags">
-              <h5>Popular Tags</h5>
-              <a href="#">Food</a>
-              <a href="#">Foodie</a>
-              <a href="#">Chicken</a>
-              <a href="#">Meat</a>
-              <a href="#">Health</a>
-              <a href="#">Vegan</a>
-              <a href="#">Fit</a>
-              <a href="#">Fruit</a>
-            </div>
-
-          </div>
-        </div>
+      <div class="section-title-wrap section-header">
+        <h2 class="title">From My Blog </h2>
+        <p class="subtitle">
+          Want to see the what new recipes we are working on? Read our daily blog posts and stay up to date
+        </p>
       </div>
+      <div class="row masonry">
 
+        <!-- Post Start -->
+        <div class="col-lg-6 col-md-6 masonry-item">
+          <article class="post">
+            <div class="post-thumbnail">
+              <a href="blog-single-v1.html"><img src="blog/assets/img/blog/1.jpg" alt="blog post"></a>
+              <div class="post-meta">
+                <span>January 22, 2020</span>
+                <span>Posted by Jonathan Pick</span>
+              </div>
+            </div>
+            <div class="post-categories">
+              <a href="#">Breakfast</a>
+            </div>
+            <div class="post-body">
+              <h5 class="post-title"> <a href="blog-single-v1.html">Puffy Pancakes Glazed With Caramel Topped With Fruits</a> </h5>
+              <p class="post-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+            </div>
+          </article>
+        </div>
+        <!-- Post End -->
+
+      
+
+        <!-- Post Start -->
+        <div class="col-lg-6 col-md-6 masonry-item">
+          <article class="post post-format-video">
+            <div class="post-thumbnail">
+              <a href="blog-single-v1.html"><img src="blog/assets/img/blog/3.jpg" alt="blog post"></a>
+              <div class="post-meta">
+                <span>January 22, 2020</span>
+                <span>Posted by Jonathan Pick</span>
+              </div>
+              
+            </div>
+            <div class="post-categories">
+              <a href="#">How-To</a>
+              <a href="#">Breakfast</a>
+            </div>
+            <div class="post-body">
+              <h5 class="post-title"> <a href="blog-single-v1.html">Chocolate Coated Browny </a> </h5>
+              <p class="post-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+            </div>
+          </article>
+        </div>
+        <!-- Post End -->
+
+      </div>
     </div>
-  </div>
+  </section>
   <!-- Blog Posts End -->
+
+  
+
+ 
+
 
 
   <!-- Newsletter start -->
   <section class="section light-bg bg-cover" style="background-image:url('blog/assets/img/bg/1.jpg')">
     <div class="container">
       <div class="section-title-wrap section-header text-center">
-        <h2 class="title">Subscribe to My Newsletter</h2>
+        <h2 class="title">Subscribe to Our Newsletter</h2>
         <p class="subtitle">
           Get access to my latest recipes by joining the weekly newsletter
         </p>
@@ -308,6 +160,7 @@
   </section>
   <!-- Newsletter End -->
 
+  
 
   <!-- Footer Start -->
   <footer class="ct-footer footer-2">
@@ -320,7 +173,7 @@
           <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
         </ul>
       </div>
-     
+
       <div class="footer-bottom">
         <div class="container">
           <p class="m-0">&copy; Copyright 2020 -  All Rights Reserved.</p>
@@ -329,7 +182,3 @@
     </div>
   </footer>
   <!-- Footer End -->
-
- <%= render "shared/frontjs" %>
-
-
